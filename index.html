@@ -30,117 +30,92 @@
             max-width: 500px;
             background: var(--white);
             min-height: 100vh;
-            padding: 40px 25px;
+            padding: 40px 20px;
             box-shadow: 0 0 20px rgba(0,0,0,0.05);
         }
 
         header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .logo {
-            max-width: 120px;
-            margin-bottom: 15px;
+            max-width: 140px;
+            margin-bottom: 10px;
         }
 
         h1 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             text-transform: uppercase;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             margin: 0;
-            color: var(--dark-brown);
         }
 
         .tagline {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--gold);
-            letter-spacing: 1px;
             margin-top: 5px;
         }
 
-        .section-divider {
+        .section-header {
             text-align: center;
             margin: 40px 0 20px;
-            position: relative;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 5px;
         }
 
-        .section-divider h2 {
-            background: var(--accent-brown);
-            color: white;
-            display: inline-block;
-            padding: 5px 20px;
-            font-size: 1rem;
+        .section-header h2 {
+            margin: 0;
+            font-size: 1.3rem;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            color: var(--accent-brown);
+        }
+
+        .category-title {
+            color: var(--gold);
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 1rem;
+            border-left: 3px solid var(--gold);
+            padding-left: 10px;
         }
 
         .signature-box {
             border: 2px solid var(--gold);
-            padding: 20px;
+            padding: 15px;
             margin: 20px 0;
             background-color: #fffbf2;
-        }
-
-        .signature-title {
-            color: var(--gold);
-            font-weight: bold;
-            margin-bottom: 15px;
-            text-align: center;
-            font-size: 1.1rem;
         }
 
         .menu-item {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
         }
 
-        .item-name {
-            font-weight: 500;
-            flex: 1;
-            padding-right: 10px;
-        }
-
-        .dots {
-            flex: 1;
-            border-bottom: 1px dotted #ccc;
-            margin-bottom: 5px;
-            margin-right: 10px;
-        }
-
-        .price {
-            font-weight: bold;
-            color: var(--accent-brown);
-        }
+        .item-name { flex: 1; padding-right: 5px; }
+        .dots { flex: 1; border-bottom: 1px dotted #ccc; margin-bottom: 4px; margin-right: 8px; }
+        .price { font-weight: bold; color: var(--accent-brown); min-width: 25px; text-align: right; }
 
         .offer {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: #b33939;
             font-style: italic;
-            margin-top: -12px;
-            margin-bottom: 15px;
             display: block;
+            margin-top: -10px;
+            margin-bottom: 12px;
         }
 
         footer {
             text-align: center;
-            margin-top: 60px;
-            padding-bottom: 20px;
-            border-top: 1px solid var(--gold);
-            padding-top: 20px;
+            margin-top: 50px;
+            padding: 20px;
             font-size: 0.8rem;
             color: #999;
-        }
-
-        .category-title {
-            color: var(--gold);
-            border-bottom: 1px solid var(--cream);
-            padding-bottom: 5px;
-            margin-top: 30px;
-            text-transform: uppercase;
-            font-size: 1.1rem;
+            border-top: 1px solid #eee;
         }
     </style>
 </head>
@@ -148,88 +123,121 @@
 
 <div class="menu-container">
     <header>
-        <img src="logo.png" alt="The Cozy Corner Logo" class="logo">
+        <img src="logo.png.JPG" alt="The Cozy Corner Logo" class="logo">
         <h1>The Cozy Corner</h1>
         <div class="tagline">Coffee • Tea • Sweets</div>
     </header>
 
+    <div class="section-header"><h2>Drinks</h2></div>
+
     <div class="signature-box">
-        <div class="signature-title">⭐ Cozy Corner Signature</div>
-        <div class="menu-item"><span class="item-name">Cozy Spanish Velvet</span><div class="dots"></div><span class="price">13</span></div>
-        <div class="menu-item"><span class="item-name">Cozy Pistachio Dream</span><div class="dots"></div><span class="price">15</span></div>
-        <div class="menu-item"><span class="item-name">Cozy Caramel Bliss</span><div class="dots"></div><span class="price">13</span></div>
-        <div class="menu-item"><span class="item-name">Cozy Strawberry Breeze</span><div class="dots"></div><span class="price">14</span></div>
+        <div style="text-align:center; font-weight:bold; color:var(--gold); margin-bottom:15px;">⭐ Cozy Corner Signature</div>
+        <div class="menu-item"><span>Cozy Spanish Velvet</span><div class="dots"></div><span class="price">13</span></div>
+        <div class="menu-item"><span>Cozy Pistachio Dream</span><div class="dots"></div><span class="price">15</span></div>
+        <div class="menu-item"><span>Cozy Caramel Bliss</span><div class="dots"></div><span class="price">13</span></div>
+        <div class="menu-item"><span>Cozy Strawberry Breeze</span><div class="dots"></div><span class="price">14</span></div>
     </div>
 
     <h3 class="category-title">Coffee</h3>
-    <div class="menu-item"><span class="item-name">Espresso</span><div class="dots"></div><span class="price">8</span></div>
-    <div class="menu-item"><span class="item-name">Americano</span><div class="dots"></div><span class="price">10</span></div>
-    <div class="menu-item"><span class="item-name">Caffè Latte</span><div class="dots"></div><span class="price">12</span></div>
-    <div class="menu-item"><span class="item-name">Cappuccino</span><div class="dots"></div><span class="price">14</span></div>
-    <div class="menu-item"><span class="item-name">Flat White</span><div class="dots"></div><span class="price">13</span></div>
-    <div class="menu-item"><span class="item-name">Cortado</span><div class="dots"></div><span class="price">10</span></div>
-    <div class="menu-item"><span class="item-name">Macchiato</span><div class="dots"></div><span class="price">10</span></div>
-    <div class="menu-item"><span class="item-name">Spanish Latte</span><div class="dots"></div><span class="price">13</span></div>
-    <div class="menu-item"><span class="item-name">Mocha</span><div class="dots"></div><span class="price">14</span></div>
-    <div class="menu-item"><span class="item-name">V60</span><div class="dots"></div><span class="price">15</span></div>
-    <div class="menu-item"><span class="item-name">Turkish Coffee</span><div class="dots"></div><span class="price">8</span></div>
+    <div class="menu-item"><span>Espresso</span><div class="dots"></div><span class="price">8</span></div>
+    <div class="menu-item"><span>Americano</span><div class="dots"></div><span class="price">10</span></div>
+    <div class="menu-item"><span>Caffè Latte</span><div class="dots"></div><span class="price">12</span></div>
+    <div class="menu-item"><span>Cappuccino</span><div class="dots"></div><span class="price">14</span></div>
+    <div class="menu-item"><span>Flat White</span><div class="dots"></div><span class="price">13</span></div>
+    <div class="menu-item"><span>Cortado</span><div class="dots"></div><span class="price">10</span></div>
+    <div class="menu-item"><span>Macchiato</span><div class="dots"></div><span class="price">10</span></div>
+    <div class="menu-item"><span>Spanish Latte</span><div class="dots"></div><span class="price">13</span></div>
+    <div class="menu-item"><span>Caramel Latte</span><div class="dots"></div><span class="price">13</span></div>
+    <div class="menu-item"><span>Pistachio Latte</span><div class="dots"></div><span class="price">15</span></div>
+    <div class="menu-item"><span>Mocha</span><div class="dots"></div><span class="price">14</span></div>
+    <div class="menu-item"><span>V60</span><div class="dots"></div><span class="price">15</span></div>
+    <div class="menu-item"><span>Coffee with Milk</span><div class="dots"></div><span class="price">7</span></div>
+    <div class="menu-item"><span>Turkish Coffee</span><div class="dots"></div><span class="price">8</span></div>
+    <div class="menu-item"><span>French Coffee</span><div class="dots"></div><span class="price">10</span></div>
+    <div class="menu-item"><span>Coffee of the Day</span><div class="dots"></div><span class="price">8</span></div>
 
     <h3 class="category-title">Iced Coffee</h3>
-    <div class="menu-item"><span class="item-name">Iced Americano</span><div class="dots"></div><span class="price">12</span></div>
-    <div class="menu-item"><span class="item-name">Iced Latte</span><div class="dots"></div><span class="price">14</span></div>
-    <div class="menu-item"><span class="item-name">Iced Spanish Latte</span><div class="dots"></div><span class="price">15</span></div>
-    <div class="menu-item"><span class="item-name">Iced Pistachio Latte</span><div class="dots"></div><span class="price">16</span></div>
-    <div class="menu-item"><span class="item-name">Iced Lotus Latte</span><div class="dots"></div><span class="price">16</span></div>
+    <div class="menu-item"><span>Iced Americano</span><div class="dots"></div><span class="price">12</span></div>
+    <div class="menu-item"><span>Iced Latte</span><div class="dots"></div><span class="price">14</span></div>
+    <div class="menu-item"><span>Iced Spanish Latte</span><div class="dots"></div><span class="price">15</span></div>
+    <div class="menu-item"><span>Iced Caramel Coffee</span><div class="dots"></div><span class="price">15</span></div>
+    <div class="menu-item"><span>Iced Mocha</span><div class="dots"></div><span class="price">15</span></div>
+    <div class="menu-item"><span>Iced V60</span><div class="dots"></div><span class="price">15</span></div>
+    <div class="menu-item"><span>Iced Pistachio Latte</span><div class="dots"></div><span class="price">16</span></div>
+    <div class="menu-item"><span>Iced Lotus Latte</span><div class="dots"></div><span class="price">16</span></div>
 
     <h3 class="category-title">Matcha</h3>
-    <div class="menu-item"><span class="item-name">Matcha</span><div class="dots"></div><span class="price">14</span></div>
-    <div class="menu-item"><span class="item-name">Strawberry Matcha</span><div class="dots"></div><span class="price">15</span></div>
-    <div class="menu-item"><span class="item-name">Matcha with Vanilla Ice Cream</span><div class="dots"></div><span class="price">16</span></div>
+    <div class="menu-item"><span>Matcha</span><div class="dots"></div><span class="price">14</span></div>
+    <div class="menu-item"><span>Strawberry Matcha</span><div class="dots"></div><span class="price">15</span></div>
+    <div class="menu-item"><span>Pistachio Matcha</span><div class="dots"></div><span class="price">16</span></div>
+    <div class="menu-item"><span>Iced Matcha with Milk</span><div class="dots"></div><span class="price">15</span></div>
+    <div class="menu-item"><span>Matcha with Vanilla Ice Cream</span><div class="dots"></div><span class="price">16</span></div>
 
-    <h3 class="category-title">Refreshers & Shakes</h3>
-    <div class="menu-item"><span class="item-name">Strawberry Mojito</span><div class="dots"></div><span class="price">14</span></div>
-    <div class="menu-item"><span class="item-name">Passion Fruit Mojito</span><div class="dots"></div><span class="price">14</span></div>
-    <div class="menu-item"><span class="item-name">Oreo Milkshake</span><div class="dots"></div><span class="price">15</span></div>
+    <h3 class="category-title">Milkshakes</h3>
+    <div class="menu-item"><span>Vanilla</span><div class="dots"></div><span class="price">15</span></div>
+    <div class="menu-item"><span>Strawberry</span><div class="dots"></div><span class="price">15</span></div>
+    <div class="menu-item"><span>Oreo</span><div class="dots"></div><span class="price">15</span></div>
+    <div class="menu-item"><span>Lotus</span><div class="dots"></div><span class="price">15</span></div>
+
+    <h3 class="category-title">Refreshers</h3>
+    <div class="menu-item"><span>Strawberry Mojito</span><div class="dots"></div><span class="price">14</span></div>
+    <div class="menu-item"><span>Passion Fruit Mojito</span><div class="dots"></div><span class="price">14</span></div>
+    <div class="menu-item"><span>Blue Mojito</span><div class="dots"></div><span class="price">14</span></div>
+    <div class="menu-item"><span>Mint Mojito</span><div class="dots"></div><span class="price">12</span></div>
 
     <h3 class="category-title">Tea</h3>
-    <div class="menu-item"><span class="item-name">Karak</span><div class="dots"></div><span class="price">7</span></div>
-    <div class="menu-item"><span class="item-name">Moroccan Tea Pot</span><div class="dots"></div><span class="price">13</span></div>
-    <div class="menu-item"><span class="item-name">Hot Karkade</span><div class="dots"></div><span class="price">5</span></div>
+    <div class="menu-item"><span>Karak</span><div class="dots"></div><span class="price">7</span></div>
+    <div class="menu-item"><span>Cozy Moroccan Tea Pot</span><div class="dots"></div><span class="price">13</span></div>
+    <div class="menu-item"><span>Moroccan Tea Cup</span><div class="dots"></div><span class="price">5</span></div>
+    <div class="menu-item"><span>Tea Saada Small/Large</span><div class="dots"></div><span class="price">3/5</span></div>
+    <div class="menu-item"><span>Hot Karkade</span><div class="dots"></div><span class="price">5</span></div>
+    <div class="menu-item"><span>Iced Karkade</span><div class="dots"></div><span class="price">8</span></div>
 
     <h3 class="category-title">Fresh Juices</h3>
-    <div class="menu-item"><span class="item-name">Fresh Orange</span><div class="dots"></div><span class="price">12</span></div>
-    <div class="menu-item"><span class="item-name">Cozy Mango Cream</span><div class="dots"></div><span class="price">12</span></div>
+    <div class="menu-item"><span>Lemon Mint</span><div class="dots"></div><span class="price">8</span></div>
+    <div class="menu-item"><span>Fresh Orange</span><div class="dots"></div><span class="price">12</span></div>
+    <div class="menu-item"><span>Mango Juice</span><div class="dots"></div><span class="price">10</span></div>
+    <div class="menu-item"><span>Cozy Mango Cream</span><div class="dots"></div><span class="price">12</span></div>
+    <div class="menu-item"><span>Cozy Tropical Cream</span><div class="dots"></div><span class="price">12</span></div>
 
-    <div class="section-divider"><h2>Sweets</h2></div>
+    <div class="section-header"><h2>Sweets</h2></div>
 
     <div class="signature-box">
-        <div class="signature-title">⭐ Cozy Corner Favorites</div>
-        <div class="menu-item"><span class="item-name">Pistachio Dream Cake</span><div class="dots"></div><span class="price">20</span></div>
-        <div class="menu-item"><span class="item-name">Lotus Delight</span><div class="dots"></div><span class="price">20</span></div>
-        <div class="menu-item"><span class="item-name">Honey Bliss Cake</span><div class="dots"></div><span class="price">17</span></div>
+        <div style="text-align:center; font-weight:bold; color:var(--gold); margin-bottom:15px;">⭐ Cozy Corner Favorites</div>
+        <div class="menu-item"><span>Pistachio Dream Cake</span><div class="dots"></div><span class="price">20</span></div>
+        <div class="menu-item"><span>Lotus Delight</span><div class="dots"></div><span class="price">20</span></div>
+        <div class="menu-item"><span>Honey Bliss Cake</span><div class="dots"></div><span class="price">17</span></div>
     </div>
 
     <h3 class="category-title">Cakes</h3>
-    <div class="menu-item"><span class="item-name">Honey Cake</span><div class="dots"></div><span class="price">17</span></div>
+    <div class="menu-item"><span>Honey Cake</span><div class="dots"></div><span class="price">17</span></div>
     <span class="offer">Opening Offer — 15</span>
 
-    <div class="menu-item"><span class="item-name">Pistachio Berry Cake</span><div class="dots"></div><span class="price">20</span></div>
+    <div class="menu-item"><span>Pistachio Berry Cake</span><div class="dots"></div><span class="price">20</span></div>
     <span class="offer">Opening Offer — 18</span>
 
-    <div class="menu-item"><span class="item-name">Madrid Cheesecake</span><div class="dots"></div><span class="price">20</span></div>
+    <div class="menu-item"><span>Madrid Cheesecake</span><div class="dots"></div><span class="price">20</span></div>
     <span class="offer">Opening Offer — 18</span>
 
-    <div class="menu-item"><span class="item-name">Kunafa Cheesecake</span><div class="dots"></div><span class="price">21</span></div>
+    <div class="menu-item"><span>Kunafa Cheesecake</span><div class="dots"></div><span class="price">21</span></div>
     <span class="offer">Opening Offer — 18</span>
 
-    <h3 class="category-title">Sweet Bites & Snacks</h3>
-    <div class="menu-item"><span class="item-name">Cozy Pancake Stack</span><div class="dots"></div><span class="price">10</span></div>
-    <div class="menu-item"><span class="item-name">Cozy Chocolate Soufflé</span><div class="dots"></div><span class="price">5</span></div>
-    <div class="menu-item"><span class="item-name">Cookies</span><div class="dots"></div><span class="price">11</span></div>
+    <div class="menu-item"><span>Lotus Cheesecake</span><div class="dots"></div><span class="price">20</span></div>
+    <div class="menu-item"><span>Apple Pie</span><div class="dots"></div><span class="price">20</span></div>
+
+    <h3 class="category-title">Sweet Bites</h3>
+    <div class="menu-item"><span>Cozy Pancake Stack</span><div class="dots"></div><span class="price">10</span></div>
+    <div class="menu-item"><span>Cozy Golden Waffle</span><div class="dots"></div><span class="price">5</span></div>
+    <div class="menu-item"><span>Cozy Sweet Crepe</span><div class="dots"></div><span class="price">5</span></div>
+    <div class="menu-item"><span>Cozy Chocolate Soufflé</span><div class="dots"></div><span class="price">5</span></div>
+
+    <h3 class="category-title">Snacks</h3>
+    <div class="menu-item"><span>Mixed Nuts</span><div class="dots"></div><span class="price">5</span></div>
+    <div class="menu-item"><span>Cookies</span><div class="dots"></div><span class="price">11</span></div>
     <span class="offer">Opening Offer — 9</span>
 
     <footer>
-        <p>&copy; 2026 The Cozy Corner. Tot ziens!</p>
+        <p>&copy; 2026 The Cozy Corner. All rights reserved.</p>
     </footer>
 </div>
 
