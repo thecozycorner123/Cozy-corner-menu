@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cozy Corner | Digital Menu</title>
+    <style>
+        :root {
+            --primary-bg: #fdfaf5;
+            --accent-brown: #6d4c41;
+            --text-main: #3e2723;
+            --gold: #b08968;
+            --border-style: 1px solid #e0d5c1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 2px solid var(--gold);
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px double var(--gold);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        .logo-text {
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 10px 0 5px;
+            color: var(--accent-brown);
+        }
+
+        .tagline {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        h2 {
+            text-align: center;
+            background: var(--accent-brown);
+            color: white;
+            padding: 8px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 40px;
+        }
+
+        .signature-section {
+            border: 1px solid var(--gold);
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #fff9f0;
+        }
+
+        .section-title {
+            color: var(--gold);
+            border-bottom: var(--border-style);
+            margin-bottom: 15px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 4px;
+        }
+
+        .item-name {
+            font-weight: 500;
+        }
+
+        .item-price {
+            font-weight: bold;
+            color: var(--accent-brown);
+        }
+
+        .offer {
+            font-size: 0.9rem;
+            color: #d32f2f;
+            font-style: italic;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .star { color: var(--gold); margin-right: 8px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo-text">The Cozy Corner</div>
+        <div class="tagline">Coffee • Tea • Sweets</div>
+    </header>
+
+    <div class="signature-section">
+        <div class="section-title"><span class="star">⭐</span> Cozy Corner Signature</div>
+        <div class="menu-item"><span class="item-name">Cozy Spanish Velvet (Spanish Latte)</span><span class="item-price">13</span></div>
+        <div class="menu-item"><span class="item-name">Cozy Pistachio Dream (Pistachio Latte)</span><span class="item-price">15</span></div>
+        <div class="menu-item"><span class="item-name">Cozy Caramel Bliss (Caramel Latte)</span><span class="item-price">13</span></div>
+        <div class="menu-item"><span class="item-name">Cozy Strawberry Breeze (Strawberry Mojito)</span><span class="item-price">14</span></div>
+    </div>
+
+    <h2>Coffee</h2>
+    <div class="menu-item"><span class="item-name">Espresso</span><span class="item-price">8</span></div>
+    <div class="menu-item"><span class="item-name">Americano</span><span class="item-price">10</span></div>
+    <div class="menu-item"><span class="item-name">Caffè Latte</span><span class="item-price">12</span></div>
+    <div class="menu-item"><span class="item-name">Cappuccino</span><span class="item-price">14</span></div>
+    <div class="menu-item"><span class="item-name">Flat White</span><span class="item-price">13</span></div>
+    <div class="menu-item"><span class="item-name">Cortado</span><span class="item-price">10</span></div>
+    <div class="menu-item"><span class="item-name">Spanish Latte</span><span class="item-price">13</span></div>
+    <div class="menu-item"><span class="item-name">V60</span><span class="item-price">15</span></div>
+
+    <h2>Iced Coffee</h2>
+    <div class="menu-item"><span class="item-name">Iced Americano</span><span class="item-price">12</span></div>
+    <div class="menu-item"><span class="item-name">Iced Latte</span><span class="item-price">14</span></div>
+    <div class="menu-item"><span class="item-name">Iced Spanish Latte</span><span class="item-price">15</span></div>
+    <div class="menu-item"><span class="item-name">Iced Pistachio Latte</span><span class="item-price">16</span></div>
+
+    <h2>Matcha</h2>
+    <div class="menu-item"><span class="item-name">Matcha</span><span class="item-price">14</span></div>
+    <div class="menu-item"><span class="item-name">Strawberry Matcha</span><span class="item-price">15</span></div>
+    <div class="menu-item"><span class="item-name">Matcha with Vanilla Ice Cream</span><span class="item-price">16</span></div>
+
+    <h2>Refreshers & Tea</h2>
+    <div class="menu-item"><span class="item-name">Strawberry Mojito</span><span class="item-price">14</span></div>
+    <div class="menu-item"><span class="item-name">Karak Tea</span><span class="item-price">7</span></div>
+    <div class="menu-item"><span class="item-name">Cozy Moroccan Tea Pot</span><span class="item-price">13</span></div>
+
+    <div class="signature-section">
+        <div class="section-title"><span class="star">⭐</span> Cozy Corner Favorites</div>
+        <div class="menu-item"><span class="item-name">Cozy Pistachio Dream Cake</span><span class="item-price">20</span></div>
+        <div class="menu-item"><span class="item-name">Cozy Lotus Delight</span><span class="item-price">20</span></div>
+        <div class="menu-item"><span class="item-name">Cozy Honey Bliss Cake</span><span class="item-price">17</span></div>
+    </div>
+
+    <h2>Cakes</h2>
+    <div class="menu-item"><span class="item-name">Honey Cake</span><span class="item-price">17</span></div>
+    <div class="offer">Opening Offer — 15</div>
+    
+    <div class="menu-item"><span class="item-name">Pistachio Berry Cake</span><span class="item-price">20</span></div>
+    <div class="offer">Opening Offer — 18</div>
+
+    <div class="menu-item"><span class="item-name">Madrid Cheesecake</span><span class="item-price">20</span></div>
+    <div class="offer">Opening Offer — 18</div>
+
+    <h2>Sweet Bites & Snacks</h2>
+    <div class="menu-item"><span class="item-name">Cozy Pancake Stack</span><span class="item-price">10</span></div>
+    <div class="menu-item"><span class="item-name">Cozy Chocolate Soufflé</span><span class="item-price">5</span></div>
+    <div class="menu-item"><span class="item-name">Cookies</span><span class="item-price">11</span></div>
+    <div class="offer">Opening Offer — 9</div>
+
+    <footer>
+        <p>&copy; 2026 The Cozy Corner. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
